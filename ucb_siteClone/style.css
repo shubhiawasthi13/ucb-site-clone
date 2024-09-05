@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    text-transform: capitalize;
+}
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* header css */
+.menu-btn{
+    font-size: 30px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 14vh;
+}
+.close-btn{
+    position: absolute;
+    right: 30px;
+   font-size: 40px;
+   top: 5px;
+   cursor: pointer;
+   display: none;
+}
+
+.navbar{
+    height: 25vh;
+    width: 100%;
+  background-color: white;
+  box-shadow: 0 0 20px grey;
+}
+.top-nav{
+    background-color: rgb(5, 5, 161);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.top-nav .btn-1{
+    background-color: red;
+    color: white;
+    padding: 8px 25px;
+    font-size: 20px;
+     border: 2px solid white;
+     animation: flash 1s ease-out infinite;
+}
+
+@keyframes flash{
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    75%{ 
+      opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.top-nav .btn-2{
+    background-color: rgb(9, 122, 47);
+    color: white;
+    padding: 8px 25px;
+    font-size: 20px;
+     border: 2px solid white;
+}
+.social-links img{
+   width: 15%;
+}
+.nav-links{
+    height: 17vh;
+    display: flex;
+  align-items: center;
+  justify-content: right;
+  z-index: 1;
+}
+.nav-links a{
+    color: black;
+    padding-right: 25px;
+    font-size: 20px;
+}
+.nav-links a:hover{
+    color: orangered;
+}
+ .course-list{
+    box-shadow: 0 0 20px grey;
+    background-color: white;
+    padding: 25px;
+    position: absolute;
+    display: none;
+    border-top: 2px solid blue;
+}
+.course-list a{
+    display: block;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+.ch:hover .course-list{
+    display:block;
+}
+
+/* main section css */
+/* home section css */
+.home img{
+    object-fit: contain;
+    height: 20%;
+    width: 100%;
+}
+.mySlides{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.mySlides img{
+    width: 100%;
+    height:60vh;
+    object-fit: cover;
+}
+.prev, .next{
+    position: absolute;
+    top: 110%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(240, 219, 219);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.home-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.home-footer h3{
+    padding: 15px;
+}
+.left-key{
+    background-color: rgb(196, 137, 11);
+    width: 50%;
+    text-align: center;
+}
+.right-key{
+    background-color: black;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+.right-key span{
+    animation: flash 1s ease-out infinite;
+}
+/* home section end  */
+
+ /* courses section start here */
+ .head{
+    display: inline-block;
+    color: rgb(5, 5, 109);
+    margin-top: 40px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 0 1.5px blue;
+    border-bottom: 5px solid rgb(209, 89, 9);
+ }
+ .course-container{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+ }
+ .course-container .box{
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px grey;
+    padding: 10px;
+    max-height: 90vh;
+
+ }
+ .box h5{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(5, 5, 109);
+    padding: 2px;
+ }
+ .box p{
+    color: rgb(104, 104, 104);
+    padding-bottom: 20px;
+ }
+ .course-container .box img{
+    width: 40%;
+    border: 3px solid white;
+    box-shadow: 0 0 30px grey;
+    border-radius: 50%;
+ }
+/* about page css */
+.about-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+
+}.about-text{
+    flex: 1 1 30rem;
+    margin-left: 40px;
+}
+.about-img{
+    flex: 1 1 30rem;
+}
+.about-img img{
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+ }
+
+
+/* footer css start here */
+.footer-1
+{
+    background-color: rgb(5, 5, 161);
+    color: white;
+    padding: 25px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.footer-1 h2{
+    padding-bottom: 4px;
+    padding-top: 20px;
+}
+.footer-box{
+    flex: 1 1 15rem;
+    min-height: 40vh;
+}
+.footer-box p{
+    padding-bottom: 6px;
+}
+.footer-box .footer-icons img{
+    width: 15%;
+    margin-top: 30px;
+}
+.footer-icons{
+    margin-right: 10px;
+}
+.footer-2{
+    background-color: rgb(5, 5, 109);
+    color: white;
+    padding: 4px;
+}
+.footer-2 p{
+    text-align: center;
+}
+
+
+/* for responsive page */
+@media screen and (max-width:768px){
+.top-nav pre{
+    padding-left: 30%;
+   font-size: 15px;
+}
+.top-nav a{
+    display: none;
+}
+ 
+.nav-links{
+   width: 50vw;
+   height: 400px;
+   padding: 20px;
+   background-color:white;
+   box-shadow: 0 0 30px grey;
+   text-align: center;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: -450px;
+   transition: 1s ease-in-out;
+}
+.nav-links.active{
+    top: 10px;
+}
+.nav-links li{
+    padding-bottom: 25px;
+}
+.course-list{
+   visibility: hidden;
+}
+
+
+.menu-btn{
+    display: block;
+    cursor: pointer;
+}
+.close-btn{
+    display: block;
+}
+.home img{
+    height: 40vh;
+}
+.prev, .next{
+    top: 80%;
+   
+}
+.home-footer{
+    display: block;
+}
+.left-key{
+    width: 100%;
+}
+.right-key{
+    width: 100%;
+}
+.about-img{
+    order: 1;
+}
+.about-text{
+    order: 2;
+}
+
+    
+}
+@media screen and (max-width:400px){
+
+#certificate img{
+    width: 80%;
+}
+.footer{
+    overflow-x: hidden;
+}
+.footer-1{
+    display: block;
+    background-color: white;
+}
+.footer-box{
+    margin: 0;
+}
+.footer-box .footer-icons img{
+    width: 10%;
+}
+.footer-box h2{
+  color: black;
+
+}
+.footer-box p{
+    color: blue;
+}
+}
+ 
